@@ -22,4 +22,15 @@
     h1 {
         font-size: 30px;
     }
+    .links-container {
+      justify-content: center;
+    }
+    body {
+      font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 399px) {
+  .container {
+    padding: unset;
+  }
 }
