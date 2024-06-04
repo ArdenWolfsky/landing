@@ -1,0 +1,25 @@
+@media screen and (max-width: 862px) {
+    .left-top-border {
+        width: 30%;
+      }
+      .right-top-border {
+        width: 30%;
+      }
+      .left-bottom-border {
+        width: 30%;
+      }
+      .right-bottom-border {
+        width: 30%;
+      }
+      .responsive-photo {
+        width: 70%;
+      }
+      .merch-wrapper {
+        width: 80%;
+      }
+}
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 30px;
+    }
+}

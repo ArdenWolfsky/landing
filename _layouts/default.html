@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }} - {{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/base.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/brands.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/responsive.css">
+  
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/site.webmanifest">
+  <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#630100">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#630100">
+  <meta name="msapplication-config" content="assets/images/browserconfig.xml">
+  <meta name="theme-color" content="#630100">
+
+  <meta property="twitter:domain" content="ardenwolfsky.com">
+  <meta property="twitter:url" content="{{ site.url }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% if page.image %}
+    <meta property="twitter:image" content="{{ site.cdn }}{{ page.image }}/public">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="{{ site.cdn }}{{ page.image }}/public">
+  {% else %}
+    <meta property="twitter:image" content="{{ site.cdn }}2cb0edce-ab98-4824-32c9-add3bbac5700/public">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="{{ site.cdn }}2cb0edce-ab98-4824-32c9-add3bbac5700/public">
+  {% endif %}
+  <meta name="description" content="{{ page.description }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title }}">
+</head>
+
+<body>
+  <div class="container fade-in">
+    <div class="row">
+      <div class="column">
+        <img src="{{ site.cdn}}e4b4a7cb-1328-40f5-15f4-cea1e5157c00/public" class="right-top-border no-drag" alt="Drink Border">
+        <img src="{{ site.cdn}}e4b4a7cb-1328-40f5-15f4-cea1e5157c00/public" class="left-top-border no-drag" alt="Drink Border">
+        <img src="{{ site.cdn}}e4b4a7cb-1328-40f5-15f4-cea1e5157c00/public" class="right-bottom-border no-drag" alt="Drink Border">
+        <img src="{{ site.cdn}}e4b4a7cb-1328-40f5-15f4-cea1e5157c00/public" class="left-bottom-border no-drag" alt="Drink Border">
+	    {{ content }}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
