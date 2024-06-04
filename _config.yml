@@ -2,3 +2,5 @@ title: "Arden Wolfsky"
 url: "https://new-landing.ardenwolfsky.com"
 cdn: "https://imagedelivery.net/WG0vvpzHMcKj08eFQPOnJg/"
 livereload: true
+exclude:
+  - build.sh
