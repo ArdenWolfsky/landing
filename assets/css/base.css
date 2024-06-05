@@ -117,7 +117,7 @@ h1 {
   line-height: 64px;
   letter-spacing: 0;
 }
-h2 {
+h2, h3 {
   color: #ba723b;
 }
 
@@ -419,4 +419,7 @@ hr {
 }
 .news-child a {
   color: #ba723b;
+}
+.news-image {
+  width: 20%;
 }
