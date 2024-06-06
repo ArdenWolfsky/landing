@@ -17,6 +17,9 @@ recursive_minify() {
 }
 # Install minifier
 npm install html-minifier -g
+# Set the target environment
+export JEKYLL_ENV=production
+echo "Running: $JEKYLL_ENV"
 # Build the site
 bundle exec jekyll build
 # Minify the pages
