@@ -17,6 +17,9 @@
       .merch-wrapper {
         width: 80%;
       }
+      .news-image {
+        width: 40%;
+      }
 }
 @media screen and (max-width: 550px) {
     h1 {
@@ -32,5 +35,8 @@
 @media screen and (max-width: 399px) {
   .container {
     padding: unset;
+  }
+  .news-image {
+    width: 50%;
   }
 }

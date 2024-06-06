@@ -423,3 +423,8 @@ hr {
 .news-image {
   width: 20%;
 }
+.news-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
