@@ -419,4 +419,7 @@ hr {
 }
 small {
   color: #f1d0af;
-} 
+}
+.button:hover {
+  text-decoration: none;
+}

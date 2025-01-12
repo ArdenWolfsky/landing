@@ -535,6 +535,20 @@ button:hover,
   filter: brightness(90%);
 }
 
+/* Lemon8 */
+.button.button-lemon8 {
+  color: #000;
+  background-color: #fff700;
+  border: 1px solid #000;
+}
+.button.button-lemon8:hover,
+.button.button-lemon8:focus {
+  filter: brightness(90%);
+}
+.button.button-lemon8 .icon {
+  width: 40px;
+}
+
 /* Letterboxd */
 .button.button-letterboxd {
   color: #ffffff;
