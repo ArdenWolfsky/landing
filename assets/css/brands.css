@@ -1091,3 +1091,13 @@ button:hover,
 .button.button-zoom:focus {
   filter: brightness(90%);
 }
+
+/* FurTrack */
+.button.button-furtrack {
+  color: #ffffff;
+  background-color: #30164d;
+}
+.button.button-furtrack:hover,
+.button.button-furtrack:focus {
+  filter: brightness(90%);
+}
