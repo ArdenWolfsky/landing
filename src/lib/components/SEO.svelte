@@ -2,7 +2,7 @@
 	import { page } from '$app/state';
 	let {
 		title,
-		description = "Cheers! I'm Arden Wolfsky, a fluffy, red wolf, Wolfsky hybrid who is a Pastry chef by day and serves up custom cocktails by night! I am a classically trained Certified Executive Pastry chef who specializes in chocolates, custom cakes, and unique dessert designs.",
+		description,
 		image,
 		noindex = false
 	}: {

@@ -39,7 +39,7 @@
 	];
 </script>
 
-<SEO description="Welcome to Arden Wolfsky's speakeasy. Take a seat and pick a drink!" />
+<SEO description="Cheers! I'm Arden Wolfsky, a fluffy, red wolf, Wolfsky hybrid!" />
 
 <Borders />
 

@@ -6,7 +6,7 @@
 
 <SEO
 	title="About"
-	description="Welcome to Arden Wolfsky's speakeasy. Take a seat and pick a drink!"
+	description="Everything about Arden Wolfsky."
 />
 
 <Borders />
