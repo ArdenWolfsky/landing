@@ -4,10 +4,7 @@
 	import Borders from '#lib/components/Borders.svelte';
 </script>
 
-<SEO
-	title="About"
-	description="Everything about Arden Wolfsky."
-/>
+<SEO title="About" description="Everything about Arden Wolfsky." />
 
 <Borders />
 

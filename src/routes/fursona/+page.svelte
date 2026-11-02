@@ -23,20 +23,18 @@
 <p>big gay wolf</p>
 
 <ImageRow
-		images={[
-			{
-				src: 'https://imagedelivery.net/WG0vvpzHMcKj08eFQPOnJg/16e3dffb-a92b-4ee3-f27e-45514515e900/public',
-				alt: "Arden standing on a rock with paws up",
-				caption:
-					"Photo by <a href='https:/hyper.lol/'>hyperdefined</a>",
-				radius: '24px'
-			},
-			{
-				src: 'https://imagedelivery.net/WG0vvpzHMcKj08eFQPOnJg/6293766f-8cda-4588-2734-f2f633469c00/public',
-				alt: 'Arden leaning against a railing waving',
-				caption:
-					"Photo by <a href='https:/hyper.lol/'>hyperdefined</a>",
-				radius: '24px'
-			}
-		]}
-	/>
+	images={[
+		{
+			src: 'https://imagedelivery.net/WG0vvpzHMcKj08eFQPOnJg/16e3dffb-a92b-4ee3-f27e-45514515e900/public',
+			alt: 'Arden standing on a rock with paws up',
+			caption: "Photo by <a href='https:/hyper.lol/'>hyperdefined</a>",
+			radius: '24px'
+		},
+		{
+			src: 'https://imagedelivery.net/WG0vvpzHMcKj08eFQPOnJg/6293766f-8cda-4588-2734-f2f633469c00/public',
+			alt: 'Arden leaning against a railing waving',
+			caption: "Photo by <a href='https:/hyper.lol/'>hyperdefined</a>",
+			radius: '24px'
+		}
+	]}
+/>

@@ -7,8 +7,11 @@
 </script>
 
 <header>
-	<div class="navbar-icon">
-		<h1 class="neon">Arden Wolfsky</h1>
+	<div class="navbar-logo">
+		<h1 class="neon">
+			<span>Arden</span>
+			<span>Wolfsky</span>
+		</h1>
 	</div>
 	<button
 		class="menu-toggle"
@@ -69,11 +72,12 @@
 			rgba(0, 0, 0, 0.25) 0px 14px 28px,
 			rgba(0, 0, 0, 0.22) 0px 10px 10px;
 	}
-	.navbar-icon {
+	.navbar-logo {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 20px;
+		width: 100%;
+		text-align: center;
 	}
 	nav {
 		width: 100%;
@@ -144,6 +148,8 @@
 		font-family: var(--font-heading);
 		color: var(--arden-caramel);
 		letter-spacing: 0.12em;
+		text-align: center;
+		margin: 0;
 		text-shadow:
 			0 0 2px #fff,
 			0 0 5px var(--arden-cream),
@@ -153,6 +159,10 @@
 			0 0 60px var(--arden-caramel);
 
 		animation: neon-flicker 5s infinite alternate;
+	}
+
+	.neon span:first-child {
+		margin-right: 0.3em;
 	}
 	@keyframes neon-flicker {
 		0%,
@@ -189,5 +199,25 @@
 		nav li a {
 			white-space: normal;
 		}
+		.neon {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: clamp(2.5rem, 10vw, 4rem);
+			line-height: 1.15;
+			margin-bottom: 30px;
+		}
+
+		.neon span:first-child {
+			margin-right: 0;
+		}
+
+		.navbar-logo {
+			width: 100%;
+		}
+		header {
+		padding-top: 25px;
+		padding-bottom: 20px;
+	}
 	}
 </style>

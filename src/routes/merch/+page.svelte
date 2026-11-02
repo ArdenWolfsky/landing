@@ -41,16 +41,14 @@
 		<span>Buy Now!</span>
 	</a>
 </div>
-<hr>
+<hr />
 <h2>Agent Ink Collection</h2>
 <CenteredImage
 	src="https://imagedelivery.net/WG0vvpzHMcKj08eFQPOnJg/d4519b41-8044-4063-d755-08c008d58600/public"
 	alt="Arden sticker"
 	width="300px"
 />
-<p>
-	Show off your bar flair with some speakeasy gear by Agent Ink!
-</p>
+<p>Show off your bar flair with some speakeasy gear by Agent Ink!</p>
 <div class="social-buttons">
 	<a href="https://agentink.gg/collections/arden-wolfsky">
 		<IconShoppingBag size={24} stroke={1.5} />
