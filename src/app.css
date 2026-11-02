@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&family=Poiret+One&display=swap');
+
+:root {
+	/* Arden Colors */
+	--arden-red: #630100;
+	--arden-cream: #f1d0af;
+	--arden-caramel: #ba723b;
+	--arden-tan: #f1d0af;
+	--arden-brown: #654632;
+	--arden-darker-brown: #23120b;
+
+	--font-heading: 'Poiret One', sans-serif;
+	--font-body: 'Cormorant Garamond', serif;
+	--font-ui: 'Josefin Sans', sans-serif;
+}
+
+@font-face {
+	font-family: RitzyRemix;
+	src: url(https://arden.bar/assets/fonts/ritzyremix.regular.ttf);
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	font-size: 1.2rem;
+}
+
+::selection {
+	background: rgba(192, 132, 252, 0.35);
+	color: inherit;
+}
+
+::-moz-selection {
+	background: rgba(192, 132, 252, 0.35);
+	color: inherit;
+}
+
+body {
+	max-width: 1050px;
+	font-family: var(--font-body);
+	font-weight: 400;
+	font-style: normal;
+	font-optical-sizing: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--arden-red);
+	color: var(--arden-tan);
+}
+
+strong,
+b {
+	font-weight: 500;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+.centered,
+figure {
+	text-align: center;
+}
+
+h1 {
+	overflow-wrap: break-word;
+	border-bottom: 0;
+	color: var(--arden-caramel);
+	font-family: var(--font-heading);
+}
+
+h2,
+h3 {
+	max-width: 60ch;
+	border-bottom: 0;
+	font-family: var(--font-heading);
+	color: var(--arden-caramel);
+}
+
+h4 {
+	padding-block: 0 10px;
+	font-size: 1rem;
+	line-height: normal;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background: color-mix(in srgb, var(--arden-caramel) 75%, transparent);
+	position: relative;
+	margin: 2.5rem auto;
+	width: 85%;
+	overflow: visible;
+}
+
+hr::after {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background: var(--arden-caramel);
+	border: 3px solid var(--arden-darker-brown);
+	transform: translate(-50%, -50%) rotate(45deg);
+	top: 50%;
+	left: 50%;
+}
+
+td,
+th {
+	white-space: nowrap;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+	display: flex;
+	align-items: baseline;
+}
+
+pre {
+	padding: 1rem;
+	border-radius: 0.5rem;
+	background: #232136;
+	border: 1px solid #393552;
+}
+
+pre,
+pre code {
+	font-family: 'Fira Code', monospace;
+	display: block;
+	white-space: pre;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+	color: var(--arden-caramel);
+	text-decoration: underline;
+}
+
+a:hover,
+a:focus-visible {
+	color: var(--arden-tan);
+}
