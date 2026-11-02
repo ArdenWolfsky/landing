@@ -15,15 +15,16 @@
 	</div>
 	<button
 		class="menu-toggle"
+		class:open={menuOpen}
 		aria-label={menuOpen ? 'Close navigation' : 'Open navigation'}
 		aria-expanded={menuOpen}
 		aria-controls="site-nav"
 		onclick={() => (menuOpen = !menuOpen)}
 	>
 		{#if menuOpen}
-			<IconX size={24} />
+			<IconX size={26} />
 		{:else}
-			<IconMenu2 size={24} />
+			<IconMenu2 size={26} />
 		{/if}
 	</button>
 
@@ -121,28 +122,74 @@
 		background-color: var(--arden-red);
 		color: var(--arden-tan);
 	}
-	h1 {
-		font-family: RitzyRemix;
-	}
 	.menu-toggle {
 		display: none;
 		align-items: center;
 		justify-content: center;
-		background-color: var(--arden-red);
-		color: var(--arden-cream);
-		border: none;
-		border-radius: 6px;
+		position: relative;
+
+		background: transparent;
+		color: var(--arden-caramel);
+
+		border: 1px solid var(--arden-caramel);
+		border-radius: 2px;
+
+		width: 48px;
+		height: 48px;
 		padding: 10px;
+
 		cursor: pointer;
 		-webkit-tap-highlight-color: transparent;
+
+		transition:
+			background-color 0.25s ease,
+			color 0.25s ease,
+			box-shadow 0.25s ease,
+			transform 0.25s ease;
 	}
-	.menu-toggle:active,
+	.menu-toggle.open {
+		background-color: var(--arden-caramel);
+		color: var(--arden-darker-brown);
+		box-shadow: 0 0 12px rgba(186, 114, 59, 0.3);
+	}
+	.menu-toggle::before,
+	.menu-toggle::after {
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		border: 1px solid var(--arden-caramel);
+		transform: rotate(45deg);
+		background: var(--arden-darker-brown);
+	}
+
+	.menu-toggle::before {
+		top: -4px;
+		left: -4px;
+	}
+
+	.menu-toggle::after {
+		bottom: -4px;
+		right: -4px;
+	}
 	.menu-toggle:hover {
-		background-color: var(--arden-red);
+		background-color: var(--arden-caramel);
+		color: var(--arden-darker-brown);
+
+		box-shadow:
+			0 0 8px rgba(186, 114, 59, 0.4),
+			0 0 16px rgba(186, 114, 59, 0.2);
 	}
-	.menu-toggle:focus {
-		background-color: var(--arden-red);
-		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+
+	.menu-toggle:active {
+		transform: scale(0.95);
+	}
+	.menu-toggle:active {
+		transform: scale(0.95);
+	}
+	.menu-toggle:focus-visible {
+		outline: 2px solid var(--arden-cream);
+		outline-offset: 4px;
 	}
 	.neon {
 		font-family: var(--font-heading);
@@ -182,6 +229,9 @@
 		}
 	}
 	@media screen and (max-width: 768px) {
+		nav {
+			display: none;
+		}
 		nav ul {
 			flex-direction: column;
 			align-items: center;
@@ -189,6 +239,10 @@
 		}
 		.menu-toggle {
 			display: flex;
+		}
+		nav.active {
+			display: block;
+			margin-top: 20px;
 		}
 		nav.active ul {
 			display: flex;
@@ -216,8 +270,17 @@
 			width: 100%;
 		}
 		header {
-		padding-top: 25px;
-		padding-bottom: 20px;
+			padding-top: 25px;
+			padding-bottom: 20px;
+		}
 	}
+	@media (prefers-reduced-motion: reduce) {
+		.neon {
+			animation: none;
+		}
+
+		.menu-toggle {
+			transition: none;
+		}
 	}
 </style>
